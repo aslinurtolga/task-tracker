@@ -4,7 +4,7 @@ import axios from "axios";
 
 const TaskList = ({ task, getTask }) => {
   const deleteTask = async (id) => {
-    const url = "https://635261e1ffbb7da0f2d6cba7.mockapi.io/api/tasks";
+    const url = "https://63516c99dfe45bbd55bfd9a2.mockapi.io/api/tasks";
     try {
       await axios.delete(`${url}/${id}`);
     } catch (error) {}
@@ -21,7 +21,7 @@ const TaskList = ({ task, getTask }) => {
             className="mt-2 d-flex justify-content-between bg-white rounded-2 p-2"
           >
             <div>
-              <h4 className="fw-bolder">{task}</h4>
+              <h4>{task}</h4>
               <p>{date}</p>
             </div>
             <div>
@@ -31,7 +31,7 @@ const TaskList = ({ task, getTask }) => {
                   cursor: "pointer",
                   marginRight: "20px",
                   fontSize: "2rem",
-                  boxShadow: "2px 2px 2px #000000",
+                  boxShadow: "2px 2px 2px #064663",
                 }}
               />
             </div>
